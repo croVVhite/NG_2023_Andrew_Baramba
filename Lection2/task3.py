@@ -5,7 +5,7 @@ def isPrime(number):
     return divider * divider > number
 
 def main():
-    numbersArray = [x for x in range(1, int(input("Enter the number up to which you want to see prime numbers: ")) + 1)]
+    numbersArray = [number for number in range(1, int(input("Enter the number up to which you want to see prime numbers: ")) + 1)]
 
     primeNumbersTable = dict.fromkeys(numbersArray)
 
