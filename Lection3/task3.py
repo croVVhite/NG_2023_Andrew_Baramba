@@ -1,9 +1,9 @@
 import json
 
-def parseJsonFile(file):
+def parseJsonFile(jsonFile):
     jsonString = ""
-    with open(file, 'r') as f:
-        for line in f.readlines():
+    with open(jsonFile, 'r') as file:
+        for line in file.readlines():
             jsonString += line
 
     return json.loads(jsonString)

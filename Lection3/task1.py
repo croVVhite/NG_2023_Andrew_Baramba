@@ -1,7 +1,7 @@
 fileContent = ""
 
-with open('task1.txt', 'r') as f:
-    for line in f.readlines():
+with open('task1.txt', 'r') as file:
+    for line in file.readlines():
         fileContent += line
 
 symbolsAmount = dict.fromkeys(set(fileContent), 0)
