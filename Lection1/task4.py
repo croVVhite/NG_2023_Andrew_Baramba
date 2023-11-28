@@ -3,20 +3,20 @@ secondNumber = int(input("Enter second number: "))
 
 operation = input("\nChoose operation (+, -, *, /, ^, root): ").lower()
 
+print("{} {} {} = ".format(firstNumber, operation, secondNumber), end="")
+
 match operation:
     case "+":
-        resMessage = "{0} {1} {2} = " + str(firstNumber + secondNumber)
+        print(str(firstNumber + secondNumber))
     case "-":
-        resMessage = "{0} {1} {2} = " + str(firstNumber - secondNumber)
+        print(str(firstNumber - secondNumber))
     case "*":
-        resMessage = "{0} {1} {2} = " + str(firstNumber * secondNumber)
+        print(str(firstNumber * secondNumber))
     case "/":
-        resMessage = "{0} {1} {2} = " + str(firstNumber / secondNumber)
+        print(str(firstNumber / secondNumber))
     case "^":
-        resMessage = "{0} {1} {2} = " + str(firstNumber ** secondNumber)
+        print(str(firstNumber ** secondNumber))
     case "root":
-        resMessage = "{0} {1} {2} = " + str(firstNumber ** (1/secondNumber))
+        print(str(firstNumber ** (1/secondNumber)))
     case _:
-        resMessage = "Invalid operation"
-
-print(resMessage.format(firstNumber, operation, secondNumber))
+        print("ERROR!\nInvalid operation value!")
