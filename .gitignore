@@ -126,6 +126,7 @@ env/
 venv/
 ENV/
 dev/
+images/
 env.bak/
 venv.bak/
 
