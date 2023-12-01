@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Calculator</title>
+    </head>
+    
+    <body>
+        <form action="/calculate" method="GET">
+            <input type="number" name="firstNum" placeholder="Enter first number">
+            <br>
+            <select type="text" name="operation" size="7">
+                <option value="" disabled>Choose operation</option>
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+                <option value="^">^</option>
+                <option value="root">root</option>
+            </select>
+            <br>
+            <input type="text" name="secondNum" placeholder="Enter second number">
+            <br>
+            <button>SEND!</button>
+        </form>
+    </body>
+
+</html>

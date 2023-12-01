@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Game</title>
+        <style>
+            .button {
+                background-color: #555555;
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div style="position: relative; top: 450px; left: 1400px; width: 200px;">
+            <button onclick="moveUp()" style="position: relative; left: 50px;" class="button">Up</button>
+            <br>
+            <button onclick="moveLeft()" style="position: relative; margin-top: 5px; margin-bottom: 5px; " class="button">Left</button>
+            <button onclick="moveRight()" style="position: relative; margin-top: 5px; margin-bottom: 5px;" class="button">Right</button>
+            <br>
+            <button onclick="moveDown()" style="position: relative; left: 18px; margin-bottom: 10px; left: 45px;" class="button">Down</button>
+        </div>
+        
+        <br>
+
+        <div id="playerField" style="width: 850px; height: 850px; border: 5px solid black; position: absolute; top: 90px; left: 8px;">
+            <img src="https://as1.ftcdn.net/v2/jpg/05/53/16/38/1000_F_553163836_srSsl4Z9FT8Ymif2pFc1N0W1P1rQhf7u.jpg" alt="playerImg" id="player" style="width: 170px; height: 170px; border-radius: 100%; top: 340px; left: 340px;">
+        </div>
+
+        <script src="../static/js/gameFuncs.js"></script>
+
+    </body>
+
+</html>
